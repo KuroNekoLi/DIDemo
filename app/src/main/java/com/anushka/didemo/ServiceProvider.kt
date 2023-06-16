@@ -5,10 +5,10 @@ import javax.inject.Inject
 
 class ServiceProvider @Inject constructor() {
     init {
-        Log.i("MYTAG","Service Provider Constructed")
+        Log.i("LinLi","Service Provider Constructed")
     }
 
     fun getServiceProvider(){
-        Log.i("MYTAG","Service provider connected")
+        Log.i("LinLi","Service provider connected")
     }
 }

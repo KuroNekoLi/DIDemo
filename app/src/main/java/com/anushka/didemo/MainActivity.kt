@@ -21,7 +21,7 @@ private lateinit var smartPhone : SmartPhone
 //        )
 //            .makeACallWithRecording()
 
-        Log.i("MYTAG", "onCreate: ")
+        Log.i("LinLi", "onCreate: ")
 
     }
 }

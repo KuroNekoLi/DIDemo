@@ -9,11 +9,11 @@ class SmartPhone @Inject constructor(val battery: Battery, val simCard: SIMCard,
         battery.getPower()
         simCard.getConnection()
         memoryCard.getSpaceAvailablity()
-        Log.i("MYTAG", "SmartPhone Constructed")
+        Log.i("LinLi", "SmartPhone Constructed")
     }
 
     fun makeACallWithRecording() {
-        Log.i("MYTAG", "Calling.....")
+        Log.i("LinLi", "Calling.....")
     }
 }
 
