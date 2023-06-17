@@ -20,10 +20,16 @@ class MainActivity : AppCompatActivity() {
 //            .getSmartPhone()
 //            .makeACallWithRecording()
 
-        DaggerSmartPhoneComponent.create()
-            .inject(this)
-        smartPhone.makeACallWithRecording()
+        //當依賴中沒有帶參數可以用這種用法
+//        DaggerSmartPhoneComponent.create()
+//            .inject(this)
+//        smartPhone.makeACallWithRecording()
 
+        //例如將記憶卡的size設為1000需要這樣
+        DaggerSmartPhoneComponent.builder()
+            .memoryCardModule(MemoryCardModule(1000))
+            .build()
+            .inject(this)
         //不使用這個injection方法
 //        val smartPhone = SmartPhone(
 //            Battery(),
