@@ -3,6 +3,7 @@ package com.anushka.didemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.namespace.R
 import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 //            .getSmartPhone()
 //            .makeACallWithRecording()
 
-            DaggerSmartPhoneComponent.create()
-                .inject(this)
+        DaggerSmartPhoneComponent.create()
+            .inject(this)
         smartPhone.makeACallWithRecording()
 
         //不使用這個injection方法
